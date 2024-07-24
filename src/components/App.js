@@ -96,8 +96,8 @@ function App() {
         </ul>
         <ul className='list'>
             {/* write filter logic */}
-            {menu.filter((item)=>(item.category===active || active==='all')).map((item,index)=>(
-                <li key={index} data-test-id={`menu-item-${item.category}`}>
+            {menu.filter((item)=>(item.category===active || active==='all')).map((item)=>(
+                <li key={item.id} data-test-id={`menu-item-${item.category}`}>
                     <img src={item.img} alt={item.title}/>
                     <div>
                         <div className='top'>
